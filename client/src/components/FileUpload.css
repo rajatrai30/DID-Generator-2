@@ -1,0 +1,83 @@
+.top {
+    margin: 40px;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  .choose {
+    background-color: initial;
+    background-image: linear-gradient(-180deg, #cc15ff, #7d00b7);
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+  }
+  .choose:hover {
+    box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+  }
+  .textArea {
+    color: white;
+  }
+  
+  .upload {
+    border: 1px solid #13aa52;
+    background-color: #13aa52;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-left: 10px;
+  }
+  
+  .upload:hover {
+    border: 1px solid #13aa52;
+    background-color: #a5efc1;
+    color: #ffffff;
+    padding: 5px 10px;
+  }
+  
+  .upload:disabled,
+  .upload[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+  }
+  
+  div {
+    padding: 5px 10px;
+  }
+
+  .reward {
+    border: 1px solid #f44336;
+    background-color: #f44336;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+
+  .displayText {
+    font-family: "Open Sans", cursive;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(255, 255, 255); /* You can adjust the color as needed */
+    margin-top: 30px; /* Optional margin-top if needed */
+  }
+  
+  .reward:hover {
+    box-shadow: 0 12px 16px 0 rgba(244, 67, 54, 0.24),
+      0 17px 50px 0 rgba(244, 67, 54, 0.19);
+  }
+  
+  .reward:disabled,
+  .reward[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+  }
+
+  
+  

@@ -1,0 +1,235 @@
+header {
+  margin-bottom: 8vh;
+}
+.navbarMain {
+  position: fixed;
+  padding: 0.75rem 0;
+  width: 100%;
+  z-index: 900;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+.navbarMain .navbarMainItems {
+  margin: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+.navbarMain .navbarMainItems .navLogo a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+.logo {
+  height: 4rem;
+  width: 4rem;
+}
+.MenuItem {
+  font-family: "Nunito", sans-serif !important;
+}
+.navbarMain .navbarMainItems .navLogo a p {
+  margin: 0 0 0 0.5rem;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: #000;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 64rem) {
+  .openmenu {
+    display: none;
+  }
+  .navbarMain .navbarMainItems .navbarMainLinks {
+    display: block;
+    min-width: 350px;
+    max-width: 350px;
+    border-radius: 30px;
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    transition: 0.3s ease-in-out;
+  }
+  .showbackshadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .backshadow {
+    display: none;
+  }
+  .showsidebar {
+    right: -20px !important;
+  }
+  .hidesidebar {
+    right: -350px !important;
+  }
+  .showmenuicon {
+    display: block !important;
+  }
+  .hidemenuicon {
+    display: none !important;
+  }
+  .sidebar {
+    padding-top: 3vh;
+  }
+  .sidebar_bottom {
+    position: absolute;
+    bottom: 10vh;
+  }
+  .sidebar_bottom li {
+    width: 100%;
+  }
+  .sidebar_bottom li a {
+    text-align: center;
+    width: 100%;
+  }
+  .sidebar li {
+    list-style-type: none;
+    margin-right: 40px;
+    padding: 0;
+    display: flex;
+    font-size: 1.6rem;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+  .sidebar a {
+    color: #000;
+    text-decoration: none !important;
+    transition: 0.3s ease-in-out;
+  }
+  .sidebar a :hover {
+    color: #4d5eff !important;
+  }
+  .sidebar .closeIcon {
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: space-between;
+  }
+  .sidebar .closeIcon img:hover {
+    cursor: pointer;
+  }
+  .sidebarLogo img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .sidebarLogo small {
+    font-weight: bold;
+    color: #000;
+    padding: 3px;
+    font-size: 1.2rem !important;
+  }
+  .sidebarLogo small:hover {
+    color: #000 !important;
+  }
+  .sidebarLogo Link {
+    font-size: 16px;
+  }
+}
+.navbarMain .navbarMainItems .navbarMainLinks .joinButton a {
+  color: #fff;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  background-color: #4d5eff;
+  border-radius: 50px;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.navbarMain .navbarMainItems .navbarMainLinks .joinButton a:hover {
+  color: #fff;
+  background-color: #4d5eff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+.navbarMain .navbarMainItems .navbarMainLinks .joinButton a:active {
+  color: #fff;
+  background-color: #6574f7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.navbarMain .navbarMainItems .navbarHamburgerMenuButton {
+  display: block;
+  border: none;
+  background: none;
+  padding: 0;
+}
+.navbarMain .navbarMainItems .navbarHamburgerMenuButton svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media screen and (min-width: 64rem) {
+  .navbarMain .navbarMainItems {
+    max-width: 80rem;
+    width: 95vw;
+    margin: 0 auto;
+  }
+  .navbarMain .navbarMainItems .navbarHamburgerMenuButton {
+    display: none;
+  }
+  /* .navbarMain .navbarMainItems .navLogo a img {
+    height: 3rem;
+    width: 3rem;
+  } */
+  .navbarMain .navbarMainItems .navLogo a p {
+    margin: 0 0 0 0.5rem;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+  .navbarMain .navbarMainItems .navbarMainLinks {
+    display: initial;
+  }
+  .navbarMain .navbarMainItems .navbarMainLinks ul {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-family: "Nunito", "sans-serif";
+  }
+  .sidebar div {
+    display: flex;
+  }
+  .navbarMain .navbarMainItems .navbarMainLinks ul li {
+    list-style: none;
+  }
+  .navbarMain .navbarMainItems .navbarMainLinks ul li:not(:last-child) a {
+    font-size: 1rem;
+    color: #000;
+    padding: 0 0.75rem;
+    margin: 0 0.1rem;
+    text-decoration: none;
+    transition: 0.1s;
+    transition-timing-function: ease;
+  }
+  .navbarMain .navbarMainItems .navbarMainLinks ul li:not(:last-child) a:hover {
+    color: #4053fe;
+  }
+  .navbarMain .navbarMainItems .navbarMainLinks ul li.userIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+  }
+  .navbarMain .navbarMainItems .navbarMainLinks ul li.userIcon button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    background: none;
+  }
+  .closeIcon {
+    display: none;
+  }
+}
+
+.dropdownArrow {
+  display: block;
+  margin-left: 0.5rem;
+}
